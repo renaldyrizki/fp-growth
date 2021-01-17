@@ -1,0 +1,23 @@
+{
+  "name": "renaldy/php-fpgrowth",
+  "description": "Modified source from Ivan Rebrov github for PHP implementation of the Frequent Pattern Growth algorithm",
+  "type": "isc",
+  "authors": [
+    {
+      "name": "Ivan Rebrov",
+      "email": "rebrvivan95@gmail.com"
+    },
+    {
+      "name": "Renaldy Rizki Maulana",
+      "email": "renaldy.rizki@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Renaldy\\PhpFPGrowth\\": "src/"
+    }
+  }
+}
