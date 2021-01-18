@@ -1,6 +1,6 @@
 <?php
 
-namespace EnzoMC\PhpFPGrowth;
+namespace Renaldy\PhpFPGrowth;
 
 use stdClass;
 

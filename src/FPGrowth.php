@@ -1,7 +1,7 @@
 <?php
 
 
-namespace EnzoMC\PhpFPGrowth;
+namespace Renaldy\PhpFPGrowth;
 
 
 class FPGrowth
