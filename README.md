@@ -1,5 +1,5 @@
 # FP-Growth
-A PHP implementation of the Frequent Pattern Growth algorithm
+A PHP implementation of the Frequent Pattern Growth algorithm.
 This is modified program from Ivan Rebrov (enzomc/php-fpgrowth).
 
 ## Getting Started
@@ -10,7 +10,7 @@ You can install the package with composer:
 
 #### Run algorithm
 
-    use EnzoMC\PhpFPGrowth\FPGrowth;
+    use Renaldy\PhpFPGrowth\FPGrowth;
 
     $transactions = [
         ['sp trochess', 'woods antitusif'],
