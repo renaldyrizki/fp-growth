@@ -52,6 +52,7 @@ You can install the package with composer:
 ### Output
 
 ### List Transaction (Dataset)
+
 Array
 (
     [0] => Array
@@ -131,6 +132,7 @@ Array
 )
 
 ### Frequent Itemset
+
 Array
 (
     [sp trochess] => Array
@@ -166,6 +168,7 @@ Array
 )
 
 ### Ordered Item
+
 Array
 (
     [0] => Array
@@ -240,6 +243,7 @@ Array
 )
 
 ### FP Tree Structure
+
 EnzoMC\PhpFPGrowth\FPNode Object
 (
     [value] => 
@@ -249,6 +253,7 @@ EnzoMC\PhpFPGrowth\FPNode Object
     [children] => Array()
 
 ### Frequency Pattern
+
 Array
 (
     [betadine,hansaplast] => 2
@@ -269,6 +274,7 @@ Array
 )
 
 ### Association Rules
+
 Array
 (
     [0] => Array
