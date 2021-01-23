@@ -1,5 +1,5 @@
 {
-  "name": "renaldy/php-fpgrowth",
+  "name": "renaldy/phpfpgrowth",
   "description": "Modified source from Ivan Rebrov github for PHP implementation of the Frequent Pattern Growth algorithm",
   "type": "isc",
   "authors": [
