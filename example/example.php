@@ -14,7 +14,7 @@ $transactions = [
     ['woods antitusif', 'vipro g', 'hansaplast'],
 ];
 
-//Percentage
+//Percentage (0-1)
 $support = 0.2;
 $confidence = 0.75;
 
