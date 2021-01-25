@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Renaldy\PhpFPGrowth;
+namespace EnzoMC\PhpFPGrowth;
 
 
 class FPGrowth
@@ -56,7 +56,18 @@ class FPGrowth
      */
     public function getPatterns()
     {
-        return $this->patterns;
+        $freqPattern = [];
+        $item = [];
+        foreach ($this->patterns as $key => $value) {
+            $key = explode(",", $key);
+            if(count($key) > 1){
+                $item['item'] = end($key);
+                $item['frequentPattern'] = implode(", ", $key);
+                $item['frequent'] = $value;
+                array_push($freqPattern, $item);
+            }
+        }
+        return $freqPattern;
     }
 
     /**
@@ -156,11 +167,11 @@ class FPGrowth
                                 $liftRatio = $confidence / $this->itemSet[$consequentStr];
                             }
                             $rules[] = [
-                                "antecedent" => $antecedentStr, 
+                                "antecedent" => str_replace(",", ", ", $antecedentStr), 
                                 "consequent" => $consequentStr, 
                                 "confidence" => $confidence, 
                                 "support" => $support, 
-                                "liftRatio" => $liftRatio
+                                "liftRatio" => number_format($liftRatio, 5)
                             ];
                         }
                     }
