@@ -256,21 +256,97 @@ You can install the package with composer:
 
     Array
     (
-        [betadine,hansaplast] => 2
-        [hansaplast,vipro g] => 2
-        [hansaplast,sp trochess] => 2
-        [betadine,hansaplast,sp trochess] => 2
-        [betadine,vipro g,woods antitusif] => 2
-        [betadine,sp trochess,woods antitusif] => 2
-        [betadine,vipro g] => 3
-        [betadine,sp trochess,vipro g] => 2
-        [betadine,sp trochess] => 4
-        [sp trochess,vipro g] => 4
-        [sp trochess,vipro g,woods antitusif] => 3
-        [vipro g,woods antitusif] => 5
-        [woods antitusif] => 7
-        [sp trochess,woods antitusif] => 5
-        [sp trochess] => 8
+        [0] => Array
+            (
+                [item] => hansaplast
+                [frequentPattern] => betadine, hansaplast
+                [frequent] => 2
+            )
+
+        [1] => Array
+            (
+                [item] => vipro g
+                [frequentPattern] => hansaplast, vipro g
+                [frequent] => 2
+            )
+
+        [2] => Array
+            (
+                [item] => sp trochess
+                [frequentPattern] => hansaplast, sp trochess
+                [frequent] => 2
+            )
+
+        [3] => Array
+            (
+                [item] => sp trochess
+                [frequentPattern] => betadine, hansaplast, sp trochess
+                [frequent] => 2
+            )
+
+        [4] => Array
+            (
+                [item] => woods antitusif
+                [frequentPattern] => betadine, vipro g, woods antitusif
+                [frequent] => 2
+            )
+
+        [5] => Array
+            (
+                [item] => woods antitusif
+                [frequentPattern] => betadine, sp trochess, woods antitusif
+                [frequent] => 2
+            )
+
+        [6] => Array
+            (
+                [item] => vipro g
+                [frequentPattern] => betadine, vipro g
+                [frequent] => 3
+            )
+
+        [7] => Array
+            (
+                [item] => vipro g
+                [frequentPattern] => betadine, sp trochess, vipro g
+                [frequent] => 2
+            )
+
+        [8] => Array
+            (
+                [item] => sp trochess
+                [frequentPattern] => betadine, sp trochess
+                [frequent] => 4
+            )
+
+        [9] => Array
+            (
+                [item] => vipro g
+                [frequentPattern] => sp trochess, vipro g
+                [frequent] => 4
+            )
+
+        [10] => Array
+            (
+                [item] => woods antitusif
+                [frequentPattern] => sp trochess, vipro g, woods antitusif
+                [frequent] => 3
+            )
+
+        [11] => Array
+            (
+                [item] => woods antitusif
+                [frequentPattern] => vipro g, woods antitusif
+                [frequent] => 5
+            )
+
+        [12] => Array
+            (
+                [item] => woods antitusif
+                [frequentPattern] => sp trochess, woods antitusif
+                [frequent] => 5
+            )
+
     )
 
 ### Association Rules
@@ -279,29 +355,28 @@ You can install the package with composer:
     (
         [0] => Array
             (
-                [antecedent] => betadine,hansaplast
+                [antecedent] => betadine, hansaplast
                 [consequent] => sp trochess
                 [confidence] => 1
                 [support] => 0.2
-                [liftRatio] => 0.125
+                [liftRatio] => 0.12500
             )
 
         [1] => Array
             (
-                [antecedent] => hansaplast,sp trochess
+                [antecedent] => hansaplast, sp trochess
                 [consequent] => betadine
                 [confidence] => 1
                 [support] => 0.2
-                [liftRatio] => 0.2
+                [liftRatio] => 0.20000
             )
 
         [2] => Array
             (
-                [antecedent] => sp trochess,vipro g
+                [antecedent] => sp trochess, vipro g
                 [consequent] => woods antitusif
                 [confidence] => 0.75
                 [support] => 0.3
-                [liftRatio] => 0.10714285714286
+                [liftRatio] => 0.10714
             )
-
     )
